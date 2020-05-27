@@ -1,0 +1,28 @@
+.posts-listing {
+	display: grid;
+	grid-template-columns: 1fr;
+	max-width: 1366px;
+	margin: 0 20px;
+
+	@media (min-width: 770px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media (min-width: 1115px) {
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: 0 auto;
+	}
+
+	&__load-more {
+		grid-column-end: -1;
+		grid-column-start: 1;
+		align-self: center;
+		width: 100px;
+		height: 64px;
+		margin: 0 auto;
+		padding: 8px 10px;
+		border-radius: 8px;
+		background-color: #303f9f;
+		color: #fff;
+	}
+}
